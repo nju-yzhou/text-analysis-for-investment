@@ -13,13 +13,13 @@ pip install -r requirements.txt
 
 我计划使用两条技术路径，如下图所示：
 
-![](/Users/zmxing/Downloads/zythesis/pictures/method.png)
+![](./pictures/method.png)
 
 ## 代码解释
 
 `get_pdf_data.py`会从上交所爬取自1999年以来所有A股上市公司的年报，并存储在`./text-analysis-for-investment/pdfs`中。其实现流程如下：
 
-![](/Users/zmxing/Downloads/zythesis/pictures/spider.png)
+![](./pictures/spider.png)
 
 这里借鉴了开源代码库[shreport](https://github.com/hiDaDeng/shreport?tab=readme-ov-file)。
 
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 `pdf_2_text.py`可以将上述代码得到的pdf转化为txt文件，并存储在`./text-analysis-for-investment/rawtxts`中，转化效果如下图所示：
 
-![](/Users/zmxing/Downloads/zythesis/pictures/pdf2txt.png)
+![](./pictures/pdf2txt.png)
 
 这里借鉴了ChatGLM金融挑战赛中的[PDFprocessor](https://github.com/MetaGLM/FinGLM/tree/main/tools/pdf_to_txt)。
 
